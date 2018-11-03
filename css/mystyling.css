@@ -1,0 +1,54 @@
+header,
+footer {
+  background-color: black;
+  color: whitesmoke;
+  padding-bottom: 1px;
+}
+
+header p {
+  /* header's indeholdte p elementer uanset at de ikke ligge lige under */
+
+  /* Min header paragraf skal slogan stå med kursiv */
+  color: cornsilk;
+  font-style: italic;
+}
+
+.myitem {
+  background: #EEE;
+}
+
+.sidebar {
+  color: #EEE;
+  background: #222;
+  border: 2px;
+}
+
+canvas {
+  /* Gør at min graf skalere korrekt */
+  width: 100%;
+  height: auto;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.main-content {
+  background: lightgray;
+}
+
+#gr {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 0;
+  height: 300px;  
+  width: 300px;
+  margin: 2px;
+  padding: 3px;
+  border-style: dotted solid dotted solid;
+  border-width: 1px;
+  background: greenyellow; 
+}
+
