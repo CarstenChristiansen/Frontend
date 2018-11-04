@@ -1,6 +1,6 @@
 <footer id="footer-text">
   <div class="container">
-    <p id="site-header-time">henter tiden</p>
+    <p id="site-time">henter tiden</p>
     <p class="text-right">
       <!--Skal stå til højre-->
       Siden 2010 har vejrportalen.dk bragt vores kunder på forkant med vejret.<br>

@@ -1,4 +1,23 @@
 
+function LogWeatherAtPosition(latitude, longitude, weather) {
+
+ 
+
+  $.ajax({
+    url: "https://vejrportalen.keisen.dk/recpos.php",
+    data: {
+      lat: latitude,
+      lon: longitude,
+      weather: weather
+    },
+    dataType: 'json',
+    success: function (resp) {
+    },
+    error: function (err) {
+    }
+  });
+}
+
 function getWeatherAtPosition(latitude, longitude) {
 
   const API_KEY = "2af9113262318bb5faa08059fdd6f08e";
@@ -18,6 +37,7 @@ function getWeatherAtPosition(latitude, longitude) {
       var city = resp.name;
       console.log(resp);
       $("#site-header-weather").html(city + " " + temp + "&deg;C");
+      LogWeatherAtPosition(latitude, longitude, city+" "+temp); //Sending client position + weather to server....
     },
     error: function (err) {
       $("#site-header-weather").html("");
@@ -26,6 +46,8 @@ function getWeatherAtPosition(latitude, longitude) {
     }
   });
 }
+
+
 
 function findMyPositionAndFetchWeather() {
 
@@ -47,6 +69,8 @@ function findMyPositionAndFetchWeather() {
 
   navigator.geolocation.getCurrentPosition(success, error); //success + error er callback...
 } //findMyPositionAndFetchWeather
+
+
 
 
 findMyPositionAndFetchWeather();

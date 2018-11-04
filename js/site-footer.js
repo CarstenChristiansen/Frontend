@@ -13,3 +13,4 @@ function findCurrentTime(){
 }
 
 findCurrentTime();
+console.log("site-footer.js was executed");

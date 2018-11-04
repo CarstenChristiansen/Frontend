@@ -16,5 +16,17 @@ function write_object_to_file_as_JSON($object) {
   fwrite($myfile, $myJSON);
   fclose($myfile);
 }
+
+//Writes to same logfile...
+function write_object_to_file_as_JSON2($object) {
+  //encode as JSON
+  $myJSON = json_encode($object);
+  $filename = 'subscribers/positions.json';
+  //Write to file
+  $myfile = fopen($filename, "w") or die("Unable to open file! $filename");
+  fwrite($myfile, $myJSON);
+  fclose($myfile);
+}
+
 ?>
 

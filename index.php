@@ -162,8 +162,12 @@
 
         <aside class="col-md-3 sidebar">
           <a class="my-3 btn btn-primary btn-block" href="subscribe.php">Nyhedsbrev</a>
-         
           
+          <div id="cases" class="btn-block rounded">
+            <h3 class="text-center">Klik en kunde</h3>
+            <p class="text-center">Find din lokale kollega.</p>
+            <img  src="svg/Map_DK.svg" alt="cases" class="img-fluid">
+          </div>
 
           <!-- <a class="my-3 btn btn-secondary btn-block " href="animate.php">Vejr Mascot</a>
           <a class="my-3 btn btn-secondary btn-block " href="imagetest.php">Imagetest</a> -->
