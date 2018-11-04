@@ -48,15 +48,7 @@ function findMyPositionAndFetchWeather() {
   navigator.geolocation.getCurrentPosition(success, error); //success + error er callback...
 } //findMyPositionAndFetchWeather
 
-function findCurrentTime(){
-  var d = new Date();
-  var date_time_local = d.toLocaleString();
-  var date_time_utc = d.toUTCString();
-  $("#site-header-time").html(date_time_local + "(lokal tid) " + date_time_utc + " (UTC)");
-}
 
-
-findCurrentTime();
 findMyPositionAndFetchWeather();
 console.log("site-header.js was executed");
 

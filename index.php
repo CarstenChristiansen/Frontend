@@ -26,32 +26,35 @@
         <div class="col-md-9">
           <div class="row">
             <!-- Rows innerDe første 9 koloner -- deles igen i 3 -->
-            <section id="udsigt" class="myitem col-md-4 border border-black rounded pl-2">
+            <section id="udsigt" class="myitem col-md-4">
+       
               <h2>Udsigt</h2>
               <!--** skal centreres -->
               <img src="image/udsigt.jpg" alt="udsigt" class="img-fluid">
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-              </p>
+                Udsigt er lig med indsigt. Indsigt der kan spare DIN tid og penge. Vejrportalen leverere postnummer præcise vejrudsigter for dit lokale område. Vi går helt ned på postnummer niveau.  </p>
+          
             </section>
 
-            <section id="varsel" class="myitem col-md-4 border border-black rounded pl-2">
+            <section id="varsel" class="myitem col-md-4 ">
+              
               <h2>Varsel</h2>
               <img src="image/varsel.jpg" alt="varsel" class="img-fluid">
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Vær beredt! Vejrportalen varsler dig om vigtige vejrbegivenheder så DU kan agere INDEN skaden er sket.  
               </p>
+       
             </section>
 
-            <section id="melding" class="myitem col-md-4 border border-black rounded pl-2">
+            <section id="melding" class="myitem col-md-4 ">
               <h2>Melding</h2>
               <img src="image/melding.jpg" alt="melding" class="img-fluid">
               <p>
-                Vi har et stærkt hold af private vejrmeldere tilknyttet som reagere når de oplever at vejret gør en forskel. Vi modtager i gennemsnit mere end 200 meldinger om dagen i visse postområder. Når vejret går sin gang er der en god grund til at lytte til meldingerne.
+                Vi har et stærkt hold af private vejrmeldere tilknyttet som reagere når de oplever at vejret gør en forskel. Vi modtager i gennemsnit mere end 200 meldinger om dagen i visse postområder.
               </p>
             </section>
 
-            <section id="graf" class="myitem col-md-4 border border-black rounded pl-2">
+            <section id="graf" class="myitem col-md-4 ">
               <h2>Graf</h2>
               <canvas id="temp-graf" width="300" height="300">
                 <script>
@@ -104,7 +107,7 @@
 
             </section>
 
-            <section id="Udsigt" class="myitem col-md-4 border border-black rounded pl-2">
+            <section id="Udsigt" class="myitem col-md-4 ">
               <H2>Tabel</H2>
               <table>
                 <caption>Vejret kommende time</caption>
@@ -146,7 +149,7 @@
               </table>
             </section>
 
-            <section class="myitem col-md-4 border border-black rounded pl-2" id="campaign">
+            <section class="myitem col-md-4 " id="campaign">
               <H2>Video</H2>
               <video width=100% controls video.preload="auto">
                 <source src="video/intro.mp4" type="video/mp4">
@@ -158,8 +161,11 @@
         </div><!-- inner col-9 -->
 
         <aside class="col-md-3 sidebar">
-          <a class="my-3 btn btn-primary btn-block" href="subscribe.php">Tilmeld nyhedsbrev</a>
-         <!-- <a class="my-3 btn btn-secondary btn-block " href="animate.php">Vejr Mascot</a>
+          <a class="my-3 btn btn-primary btn-block" href="subscribe.php">Nyhedsbrev</a>
+         
+          
+
+          <!-- <a class="my-3 btn btn-secondary btn-block " href="animate.php">Vejr Mascot</a>
           <a class="my-3 btn btn-secondary btn-block " href="imagetest.php">Imagetest</a> -->
         </aside> <!-- inner col-3 -->
       </div> <!-- outer devision -->
@@ -167,19 +173,8 @@
     <!--bootstrap container-->
   </article> 
 
-
-  <footer id="footer-text">
-    <div class="container">
-      <p class="text-right">
-        <!--Skal stå til højre-->
-        Siden 2010 har vejrportalen.dk bragt vores kunder på forkant med vejret.<br>
-        Vi bringer udsigter, varsler og meldinger for dit lokalområde – til dig.<br>
-        Få besked på SMS, på mail og ved personligt opkald når <strong>DU</strong> ønsker det
-      </p>
-    </div>
-  </footer>
-
-
+  <?php require 'site-footer.php'; ?>
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
