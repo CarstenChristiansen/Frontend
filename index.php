@@ -23,53 +23,50 @@
       <div class="container">
 
 
-        <div id ="mission" class ="mission general-item" >
+        <div id ="mission" class ="mission general-item mb-3" >
           <h2 class="">Du ved hvad vejret betyder for din virksomhed</h2>
           <h3>Vi har de mest præcise vejrudsigter så du altid er foran</h3>
-          <a id="nyhedsbrev" class="btn btn-primary btn-block shadow" href="subscribe.php">Nyhedsbrev</a>
+          <a id="nyhedsbrev" class="btn btn-primary btn-block shadow" href="subscribe.php">Tilmeld Nyhedsbrev nu!</a>
         </div> 
 
-        <article >
-          <H1 class ="text-center mb-5" >VÆR PÅ FORKANT</H1>
-
-          <div class="row mb-2">
+        <article>
+          <div class="row no-gutter mb-2">
             <section class="col-md-4">
               <img src="image/udsigt.jpg" alt="udsigt" class="img-fluid">
             </section>
-            <section class="col-md-8">
+            <section class="col-md-8 general-item">
               <h2>UDSIGT</h2>
-              <p>
-                Udsigt er lig med indsigt. Indsigt der kan spare DIN tid og penge. 
-                Vejrportalen leverere postnummer præcise vejrudsigter for dit lokale område. 
-                Vi går helt ned på postnummer niveau.  
-              </p>
+              <h3>Udsigt er indsigt.</h3>
+              <p>Vejrportalen leverere postnummer præcise vejrudsigter for dit lokaleområde.</p>
+              <a id="nyhedsbrev" class="btn btn-success btn-sm " href="index.php">Vis mig hvordan!</a>
             </section>
-          </div> <!-- ROW -->
+          </div> 
 
-          <div class="row mb-2">
-            <section class="col-md-4">
-              
+          <div class="row no-gutter mb-2">
+            <section class="col-md-4 ">              
               <img src="image/varsel.jpg" alt="varsel" class="img-fluid">
             </section>
-            <section class="col-md-8">
-              <h2>Varsel</h2>
+            <section class="col-md-8 general-item">
+              <h2>VARSEL</h2>
+              <h3>Vær beredt!</H3>
               <p>
-                Vær beredt! Vejrportalen varsler dig om vigtige vejrbegivenheder så DU kan agere INDEN skaden er sket.  
+                 Vejrportalen varsler dig om vigtige vejrbegivenheder så DU kan agere INDEN skaden er sket.  
               </p>
+              <a id="nyhedsbrev" class="btn btn-success btn-sm " href="index.php">Vis mig hvordan!</a>
             </section>
           </div> <!-- ROW -->
 
-          <div class="row mb-5">
-            <section class="col-md-4 ">
-
-             
+          <div class="row no-gutter mb-2">
+            <section class="col-md-4">
               <img src="image/melding.jpg" alt="melding" class="img-fluid">
             </section>
-            <section class="col-md-8">
-               <h2>Melding</h2>
-              <p>
-                Vi har et stærkt hold af private vejrmeldere tilknyttet som reagere når de oplever at vejret gør en forskel. Vi modtager i gennemsnit mere end 200 meldinger om dagen i visse postområder.
+            <section class="col-md-8 general-item">
+               <h2>MELDING</h2>
+               <H3>Et stærkt hold står bag</H3>
+               <p>
+                Vi har mere end 100 vejrmeldere tilknyttet som reagere når de oplever at vejret gør en forskel.
               </p>
+              <a id="nyhedsbrev" class="btn btn-success btn-sm" href="index.php">Se et eksempel</a>
             </section>
           </div> <!-- ROW -->    
         </article>  

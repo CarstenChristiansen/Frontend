@@ -1,8 +1,4 @@
 <header>
-  <div class="under-construction" >
-    <img src="image/construction.png" alt="Construction" class="icon">
-  </div>
-
   <div class="center-ontop container-fluid" > 
     <div class="container" >
       <div class="logotekst" >Vejrportalen</div>

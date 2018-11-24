@@ -1,17 +1,21 @@
 :root {
-  --invers-background: rgb(7,100,113);
-  --invers-text-foreground: rgb(255,255,255);
-  
-  --content-background: rgb(240,240,233);
   
   --btn-important:  rgb(233,93,15);
   --btn-normal: rgb(124,152,119);
   --clickme: rgb(249,216,0);
 }
 
+/*======================================
+=            NO GUTTER CODE            =
+======================================*/
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 header {
   background-color: black; 
-  color: var(--invers-text-foreground);
+  color: white;
 }
 
 #slogan {
@@ -25,13 +29,13 @@ header p {
 }
 
 nav {
-  background-color: var(--invers-background);
-  color: var(--invers-text-foreground);
+  background-color: rgb(7,100,113);
+  color:            white;
 }
 
 footer {
-  background-color: var(--invers-background);
-  color: var(--invers-text-foreground);
+  background-color: rgb(7,100,113);
+  color: white;
   padding-bottom: 1px;
 }
 
@@ -45,43 +49,24 @@ footer {
   padding-top: 15px;
 }
 
-/* For test */
-.boxes {
-  border-style: solid;
-  border-color: yellow;
-}
-
-/* 9 col til højre for sidebar */
-.grid-content{
-  
-}
-
-/* SIDEBAR  -------------------------------------------------------*/
-.sidebar {
-  background: var(--invers-background);
-}
+/* Ting i en tekstbox */
 
 .general-item {
-  background-color: var(--content-background);
-
+  background-color: rgb(240,240,233);
+  padding: 20px;
 }
+
 .general-item h2 {
   color : black;
 }
 
 .general-item h3 {
-  color : var(--invers-background);
-  text-shadow: 1px 1px 2px #888; /* del7 */
+  color: rgb(7,100,113);
+  text-shadow: 1px 1px 2px #888;
 }
 
-/* Specielt */ 
-canvas {
-  /* Gør at min graf skalere korrekt */
-  width: 100%;
-  height: auto;
-}
 
-/* icon på subscribe siden */
+/* iconer på subscribe siden */
 .icon {
   width: 64px;
   height: 64px;
@@ -95,12 +80,7 @@ canvas {
   width: 100%;
 }
 
-.under-construction {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-}
-
+/* PAGE HEADER **********************************************/
 .logotekst {
   font-size: 60px;
   text-shadow: 4px 4px 8px #000000; /* del7 */
@@ -123,31 +103,24 @@ canvas {
 
 /* Overstyre bootstrap knapper med mine farver */
 
+/* Grøn knap */
 .btn-success , .btn-sucess:hover , btn-success:active {
   background-color: rgb(124,152,119);
   border-color: rgb(124,152,119);  
 }
 
+/* Gul knap */
 .btn-primary, .btn-primary:hover , btn-primary:active{
-  background-color: var(--clickme) ;
-  border-color: var(--clickme) ;
+  background-color: rgb(249,216,0);
+  border-color: rgb(249,216,0);
   font-size: 25px;
 }
 
 .faktaboks{
-  background-color: var(--invers-background);
-  color: var(--invers-text-foreground);
+  background-color: rgb(7,100,113);
+  color: white;
   padding: 10px;
 }
-
-/*test hover*/
-
-#e11_circle:hover {
-  display: none;
-  color: red;
-  r: 20;
-}
-
 
 #nyhedsbrev{
   margin-top: 20px;
@@ -161,7 +134,7 @@ canvas {
   color: red;
   z-index: 1;
   font-size: 30px;
-  text-shadow: 4px 4px 8px #000000; /* del7 */
+  text-shadow: 4px 4px 8px #000000; 
 }
 
-}
+
