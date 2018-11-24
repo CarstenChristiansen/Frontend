@@ -1,8 +1,6 @@
 
 function LogWeatherAtPosition(latitude, longitude, weather) {
-
- 
-
+  
   $.ajax({
     url: "https://vejrportalen.keisen.dk/recpos.php",
     data: {
@@ -11,6 +9,7 @@ function LogWeatherAtPosition(latitude, longitude, weather) {
       weather: weather
     },
     dataType: 'json',
+    type: "POST",
     success: function (resp) {
     },
     error: function (err) {
@@ -64,7 +63,10 @@ function findMyPositionAndFetchWeather() {
   }
 
   function error() {
-    prompt("Kan ikke finde postion! Har du godkendt + slået GPS til?", "");
+    //prompt("Kan ikke finde postion! Har du godkendt + slået GPS til?", "");
+    var latitude = 55.5;
+    var longitude = 12;
+    getWeatherAtPosition(latitude, longitude);
   }
 
   navigator.geolocation.getCurrentPosition(success, error); //success + error er callback...

@@ -112,6 +112,7 @@
     ?>
 
     <main class="container main-content pb-2"> <!-- Det er nødvendig med padding i bunden fordi knappen ellers går helt ned til footeren. -->
+      <div class="general-item rounded">
       <?php
       if (!$isGet and $isValidated) {  //POST + VALIDERET  
         //Danne object:
@@ -203,6 +204,7 @@
           <button class="btn btn-success btn-lg btn-block" type="submit">Tilmeld</button>
         </form>
       <?php } // Slut på form, GET eller ikke valideret POST  ?> 
+      </div> <!-- general-item -->
     </main>  <!--Container main-content--> 
 
     <?php require 'site-footer.php'; ?>

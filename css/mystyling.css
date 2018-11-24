@@ -1,15 +1,31 @@
 :root {
   --invers-background: rgb(7,100,113);
   --invers-text-foreground: rgb(255,255,255);
+  
   --content-background: rgb(240,240,233);
+  
   --btn-important:  rgb(233,93,15);
   --btn-normal: rgb(124,152,119);
   --clickme: rgb(249,216,0);
 }
 
 header {
-
   background-color: black; 
+  color: var(--invers-text-foreground);
+}
+
+#slogan {
+  font-style: italic;
+  font-weight: normal;
+}
+
+header p {
+  font-style: italic; /* Kursiv tekst */
+  font-weight: bold;
+}
+
+nav {
+  background-color: var(--invers-background);
   color: var(--invers-text-foreground);
 }
 
@@ -19,49 +35,62 @@ footer {
   padding-bottom: 1px;
 }
 
-header p {
-  /* header's indeholdte p elementer uanset at de ikke ligge lige under */
-
-  /* Min header paragraf skal slogan stå med kursiv */
-  color: var(--invers-text-foreground);
-  font-style: italic;
-  font-weight: bold;
+#mission{
+  text-align: center;
+  padding: 20px;
 }
 
-#slogan {
-  font-style: italic;
-  font-weight: normal;
+/* Hele den miderste container */
+.main-content{
+  padding-top: 15px;
 }
 
-.myitem {
+/* For test */
+.boxes {
   border-style: solid;
-  border-color: var(--invers-text-foreground);
+  border-color: yellow;
 }
 
+/* 9 col til højre for sidebar */
+.grid-content{
+  
+}
 
+/* SIDEBAR  -------------------------------------------------------*/
 .sidebar {
   background: var(--invers-background);
 }
 
+.general-item {
+  background-color: var(--content-background);
+
+}
+.general-item h2 {
+  color : black;
+}
+
+.general-item h3 {
+  color : var(--invers-background);
+  text-shadow: 1px 1px 2px #888; /* del7 */
+}
+
+/* Specielt */ 
 canvas {
   /* Gør at min graf skalere korrekt */
   width: 100%;
   height: auto;
 }
 
+/* icon på subscribe siden */
 .icon {
   width: 64px;
   height: 64px;
 }
 
-.main-content {
-  background: var(--content-background);
-}
-
+/* Brugt til slider på header */
 .center-ontop {
   position: absolute;
   top: 0;
-  
   z-index: 1;
   width: 100%;
 }
@@ -73,11 +102,18 @@ canvas {
 }
 
 .logotekst {
-  font-size: 50px;
+  font-size: 60px;
+  text-shadow: 4px 4px 8px #000000; /* del7 */
+}
+
+#slogan{
+  text-shadow: 4px 4px 8px #000000; /* del7 */
+}
+#site-header-weather{
+  text-shadow: 4px 4px 8px #000000; /* del7 */
 }
 
 .carousel-item img{
-
   opacity: 0.9;
   /* width: 100%; */  
   height: 200px;
@@ -85,20 +121,7 @@ canvas {
   vertical-align: middle;
 }
 
-#gr {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  z-index: 0;
-  height: 300px;  
-  width: 300px;
-  margin: 2px;
-  padding: 3px;
-  border-style: dotted solid dotted solid;
-  border-width: 1px;
-  background: greenyellow; 
-}
-
+/* Overstyre bootstrap knapper med mine farver */
 
 .btn-success , .btn-sucess:hover , btn-success:active {
   background-color: rgb(124,152,119);
@@ -108,10 +131,37 @@ canvas {
 .btn-primary, .btn-primary:hover , btn-primary:active{
   background-color: var(--clickme) ;
   border-color: var(--clickme) ;
+  font-size: 25px;
 }
 
-#cases {
-  background-color:  var(--content-background);
-  color: var(--invers-background);
-  padding-top: 5px;
+.faktaboks{
+  background-color: var(--invers-background);
+  color: var(--invers-text-foreground);
+  padding: 10px;
+}
+
+/*test hover*/
+
+#e11_circle:hover {
+  display: none;
+  color: red;
+  r: 20;
+}
+
+
+#nyhedsbrev{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ontop-right-coner{
+  position: absolute;
+  bottom: 5px;
+  left:5px;
+  color: red;
+  z-index: 1;
+  font-size: 30px;
+  text-shadow: 4px 4px 8px #000000; /* del7 */
+}
+
 }
