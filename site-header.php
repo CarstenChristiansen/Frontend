@@ -1,7 +1,7 @@
 <header>
   <div class="center-ontop container-fluid" > 
     <div class="container" >
-      <div class="logotekst" >Vejrportalen</div>
+      <div id="logotekst" >Vejrportalen</div>
       <p id="slogan">Vejret er lige blevet bedre</p>
       <p id="site-header-weather">Henter vejret hos dig</p>
     </div>
