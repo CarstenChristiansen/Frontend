@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+ 
     <!-- Add my own CSS Here-->
     <link rel="stylesheet" href="css/mystyling.css">
 
@@ -111,8 +111,8 @@
     //echo "firstName: $firstName firstNameErr: $firstNameErr";
     ?>
 
-    <main class="container main-content pb-2"> <!-- Det er nødvendig med padding i bunden fordi knappen ellers går helt ned til footeren. -->
-      <div class="general-item rounded">
+    <main class="container frame-gradient"> 
+      <div class="general-item">
       <?php
       if (!$isGet and $isValidated) {  //POST + VALIDERET  
         //Danne object:
@@ -148,7 +148,7 @@
           <div class="row"> 
             <div class="col-md-6 mb-3">
               <label for="firstName">Fornavn</label>
-              <input class="form-control <?php if (!empty($firstNameErr)) echo "is-invalid"; ?>" id="firstName" 
+              <input class="form-control <?php if (!empty($firstNameErr)) {echo "is-invalid";} ?>" id="firstName" 
                      placeholder="" name="firstName" value="<?php echo $firstName; ?>" required="" type="text"  aria-describedby="forstNameHelpBlock">
               <small id="firstNameHelpBlock" class="form-text text-muted">
                 Dette er en hjælpetekst til fornavn 
@@ -161,7 +161,7 @@
 
             <div class="col-md-6 mb-3">
               <label for="lastName">Efternavn</label>
-              <input class="form-control <?php if (!empty($lastNameErr)) echo "is-invalid"; ?>" id="lastName" 
+              <input class="form-control <?php if (!empty($lastNameErr)) {echo "is-invalid";} ?>" id="lastName" 
                      required="" type="text" name="lastName" value="<?php echo $lastName; ?>">
               <div class="invalid-feedback">
                 Efternavn skal angives.
@@ -178,7 +178,7 @@
 
           <div class="mb-3">
             <label for="email">Email </label>
-            <input class="form-control <?php if (!empty($emailErr)) echo "is-invalid"; ?>" id="email"  
+            <input class="form-control <?php if (!empty($emailErr)){echo "is-invalid"; }?>" id="email"  
                    required="" type="email" name="email" value="<?php echo $email; ?>">
             <div class="invalid-feedback">
               Gyldig Email skal angives.
@@ -188,7 +188,7 @@
 
           <div class="mb-3">
             <label for="address">Adresse </label>
-            <input class="form-control <?php if (!empty($addressErr)) echo "is-invalid"; ?>" id="address" 
+      <input class="form-control <?php if (!empty($addressErr)){ echo "is-invalid";} ?>" id="address" 
                    required="" type="text" name="address" value="<?php echo $address; ?>">
             <div class="invalid-feedback">
               Adresse skal angives.
@@ -201,7 +201,7 @@
             <input class="form-control" id="telephone"  type="text" name="telephone" value="<?php echo $telephone; ?>">
           </div>
 
-          <button class="btn btn-success btn-lg btn-block" type="submit">Tilmeld</button>
+          <button class="btn btn-success btn-lg btn-block my-2" type="submit">Tilmeld</button>
         </form>
       <?php } // Slut på form, GET eller ikke valideret POST  ?> 
       </div> <!-- general-item -->

@@ -18,59 +18,70 @@
   <body>
  
     <?php include 'site-header.php'; ?>
-
+     
     <article>
-      <div class="container">
-
-
-        <div id ="mission" class ="mission general-item mb-3" >
-          <h2 class="">Du ved hvad vejret betyder for din virksomhed</h2>
-          <h3>Vi har de mest præcise vejrudsigter så du altid er foran</h3>
-          <a id="nyhedsbrev" class="btn btn-primary btn-block shadow" href="subscribe.php">Tilmeld Nyhedsbrev nu!</a>
-        </div> 
-
+      <div class="container frame-gradient">
+      
+          
+     <!-- NTH løsningen...    <div id="mission" class ="row mission  mb-3 no-gutters" >
+          <div class="col-md-12 general-item">   -->   
+          <div id = "mission" class="general-item mb-3">
+            <h2 class="">Du ved hvad vejret betyder for din virksomhed</h2>
+            <h3>Vi har de mest præcise vejrudsigter så du altid er foran</h3>
+            <a id="nyhedsbrev" class="btn btn-primary btn-block shadow" href="subscribe.php">Tilmeld Nyhedsbrev</a>
+          </div>
+        
+           
         <article>
-          <div class="row no-gutter mb-2">
-            <section class="col-md-4">
-              <img src="image/udsigt.jpg" alt="udsigt" class="img-fluid">
-            </section>
-            <section class="col-md-8 general-item">
+            
+                
+          <div class="row no-gutters mb-3">
+            <div class="col-md-4">
+             <img src="image/udsigt2.jpg" alt="udsigt" class="img-fluid item-image">
+            </div>
+            <div class="col-md-8 general-item">
+              <div class="general-item">
               <h2>UDSIGT</h2>
               <h3>Udsigt er indsigt.</h3>
-              <p>Vejrportalen leverere postnummer præcise vejrudsigter for dit lokaleområde.</p>
-              <a id="nyhedsbrev" class="btn btn-success btn-sm " href="index.php">Vis mig hvordan!</a>
-            </section>
+              <p>Få postnummer præcise vejrudsigter for dit lokaleområde.</p>
+             <a id="nyhedsbrev" class="btn btn-success btn-sm my-2" href="index.php">Se et eksempel!</a>
+              </div>
+            </div>
           </div> 
-
-          <div class="row no-gutter mb-2">
+                
+          <div class="row no-gutters mb-3">
             <section class="col-md-4 ">              
-              <img src="image/varsel.jpg" alt="varsel" class="img-fluid">
+              <img src="image/varsel2.jpg" alt="varsel" class="img-fluid">
             </section>
             <section class="col-md-8 general-item">
+              <div class="general-item">
               <h2>VARSEL</h2>
               <h3>Vær beredt!</H3>
               <p>
                  Vejrportalen varsler dig om vigtige vejrbegivenheder så DU kan agere INDEN skaden er sket.  
               </p>
-              <a id="nyhedsbrev" class="btn btn-success btn-sm " href="index.php">Vis mig hvordan!</a>
+              <a id="nyhedsbrev" class="btn btn-success btn-sm my-2" href="index.php">Vis mig hvordan!</a>
+              </div>
             </section>
           </div> <!-- ROW -->
 
-          <div class="row no-gutter mb-2">
+          <div class="row no-gutters mb-3">
             <section class="col-md-4">
-              <img src="image/melding.jpg" alt="melding" class="img-fluid">
+              <img src="image/Melding2.jpg" alt="melding" class="img-fluid">
             </section>
             <section class="col-md-8 general-item">
+              <div class="general-item">
                <h2>MELDING</h2>
                <H3>Et stærkt hold står bag</H3>
                <p>
-                Vi har mere end 100 vejrmeldere tilknyttet som reagere når de oplever at vejret gør en forskel.
-              </p>
-              <a id="nyhedsbrev" class="btn btn-success btn-sm" href="index.php">Se et eksempel</a>
+                Vores 100 vejrmeldere reagere når de oplever at vejret gør en forskel.
+               </p>
+               <a id="nyhedsbrev" class="btn btn-success btn-sm my-2" href="index.php">Hvad melder de?</a>
+              </div>
             </section>
           </div> <!-- ROW -->    
         </article>  
-
+   
         <div class="general-item btn-block ">
           <h3>Find ud af hvordan vi har hjulpet andre professionelle.</h3>
           <img  src="svg/Map_DK.svg" alt="cases" class="img-fluid">

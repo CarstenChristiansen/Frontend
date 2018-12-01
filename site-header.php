@@ -29,13 +29,19 @@
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
     <a class="navbar-brand" href="./">Hjem</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    
+<!-- 
+      HAMBURGERMENU  
+    
+    <button class="navbar-toggler hide" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-   <!--     <li class="nav-item active ">
+    </button> 
+-->
+    
+<!-- <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+        
+      <li class="nav-item active ">
           <a class="nav-link" href="./">link2<span class="sr-only"></span>
           </a>
         </li>
@@ -43,7 +49,7 @@
           <a class="nav-link" href="#">link2</a>
           
         </li>        
-      </ul> -->
+      </ul>   -->
     </div>
     </div>
   </nav>
